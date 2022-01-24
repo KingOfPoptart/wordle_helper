@@ -8,6 +8,9 @@ Given some input, spit out the possible words for a Wordle puzzle
 # Download the dictionary to a file called 'dictionary.txt'
 curl https://raw.githubusercontent.com/redbo/scrabble/master/dictionary.txt -o dictionary.txt -s
 
+# wordle.py depends on click
+pip install click
+
 # Do some preprocessing and spit out '5letterwords.txt'
 python preprocess.py
 ```
