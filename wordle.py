@@ -17,7 +17,7 @@ def solve(contains, indices, impossible, inputfile):
         correct = True
         if len(indices) > 0:
             for letter in indices:
-                if word[int(letter[1])] != letter[0]:
+                if letter and word[int(letter[1])] != letter[0]:
                     correct = False
                     break
         if correct and len(contains) > 0:
