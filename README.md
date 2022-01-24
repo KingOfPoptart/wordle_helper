@@ -18,11 +18,11 @@ Usage: wordle.py [OPTIONS]
 
 Options:
   --contains TEXT    Letters that must be included. Example "olk"
-  --indices TEXT     Comma separated list of letters and indices.  Example
-                     "f0,o1,l2,k3,s4
-  --impossible TEXT  Letters that must be excluded.  Example
+  --indices TEXT     Comma separated list of letters and indices.  Example:
+                     "f0,o1,l2,k3,s4"
+  --impossible TEXT  Letters that must be excluded.  Example:
                      "abcdeghijmnpqrtuvwxyz"
-  --inputfile TEXT   Word list to use
+  --inputfile TEXT   Word list to use  (Default: "5letterwords.txt")
   --help             Show this message and exit.
 ```
 
