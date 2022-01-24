@@ -1,10 +1,10 @@
 import click, re
 
 @click.command()
-@click.option('--contains', default="", help='Letters that must be included. Example "olk"')
-@click.option('--indices', default="", help='Comma separated list of letters and indices.  Example "f0,o1,l2,k3,s4')
-@click.option('--impossible', default="", help='Letters that must be excluded.  Example "abcdeghijmnpqrtuvwxyz"')
-@click.option('--inputfile', default="5letterwords.txt", help='Word list to use')
+@click.option('--contains', default="", help='Letters that must be included. Example: "olk"')
+@click.option('--indices', default="", help='Comma separated list of letters and indices.  Example: "f0,o1,l2,k3,s4"')
+@click.option('--impossible', default="", help='Letters that must be excluded.  Example: "abcdeghijmnpqrtuvwxyz"')
+@click.option('--inputfile', default="5letterwords.txt", help='Word list to use. Default: "5letterwords.txt"')
 def solve(contains, indices, impossible, inputfile):
     """Wordle Helper."""
     
