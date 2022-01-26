@@ -12,7 +12,7 @@ def solve(contains, indices, impossible, inputfile):
         fiveletterwords = file.readlines()
     indices = indices.split(",")
     contains = contains.split(",")
-
+    
     for word in fiveletterwords:
         word = word.strip()
         correct = True
@@ -23,7 +23,7 @@ def solve(contains, indices, impossible, inputfile):
                     break
         if correct and len(contains) > 0:
             for letter in contains:
-                if letter[0] not in word:
+                if letter and letter[0] not in word:
                     correct = False
                     break
                 elif letter and word[int(letter[1])] == letter[0]:
